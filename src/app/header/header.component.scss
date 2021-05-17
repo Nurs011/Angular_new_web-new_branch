@@ -1,0 +1,40 @@
+[data-tooltip] {
+  position: relative;
+}
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  width: 300px;
+  left: 16.7%; top: 0;
+  background: black;
+  color: white;
+  padding: 0.5em;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  opacity: 0;
+}
+[data-tooltip]:hover::after {
+  opacity: 1;
+  top: 2.9em;
+}
+
+[data-tooltipp] {
+  position: relative;
+}
+[data-tooltipp]::after {
+  content: attr(data-tooltipp);
+  position: absolute;
+  width: 300px;
+  left: 0; top: 0;
+  background: orangered;
+  color: white;
+  padding: 0.5em;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  opacity: 0;
+  transition: 1s;
+}
+[data-tooltipp]:hover::after {
+  opacity: 1;
+  top: 2.9em;
+}

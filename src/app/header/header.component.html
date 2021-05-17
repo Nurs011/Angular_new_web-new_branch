@@ -1,0 +1,53 @@
+<nav class="navbar text-light" style="background-color: #000000">
+  <ul style="margin-top: -6px">
+    <li>
+      <a routerLink="men">Men clothes</a>
+    </li>
+    <li>
+      <a routerLink="women">Women clothes</a>
+    </li>
+    <li>
+      <a routerLink="kids">Kids clothes</a>
+    </li>
+  </ul>
+</nav>
+<header class="blog-header  border-bottom" style="width: 90%; margin-left: 5%">
+  <div class="row flex-nowrap justify-content-between align-items-center">
+    <div></div>
+    <header class="blog-header  border-bottom" style="width: 90%; margin-left: 5%">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+          <a class="text-muted" href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-4 text-center">
+          <a href="index.html"><h1  class="blog-header-logo text-dark" style="font-family: 'Acme', sans-serif;" href="home" >Lamoda.kz</h1></a>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+          <input style="margin-top: 12px; width: 40%; height: 29px" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Search">
+          <a class="text-muted">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
+          </a>
+          <a class="text-muted" [routerLink]="['cart']"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a>
+          <button class="btn btn-sm ml-3 btn-secondary" [routerLink]="['/admin/login']"routerLinkActive="active" >Log in</button>
+        </div>
+      </div>
+    </header>
+    <div></div>
+  </div>
+</header>
+<div class="nav-scroller py-1 mb-2" style="width: 60%; margin-left: 5.5%">
+  <nav class="nav d-flex justify-content-between">
+
+    <a routerLink="home" class="p-2"><b>Home</b></a>
+    <a routerLink="men" class="p-2"><b>Men</b></a>
+    <a routerLink="kids" class="p-2"><b>New</b></a>
+    <a routerLink="women" class="p-2"><b>Women</b></a>
+    <a routerLink="home" class="p-2"><b>Sale%</b></a>
+    <a routerLink="kids" class="p-2"><b>Kids</b></a>
+
+  </nav>
+</div>
+
+
+
+
